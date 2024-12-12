@@ -1,8 +1,13 @@
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello():
-    return render_template('index.html')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+</head>
+<body>
+    <h1>El primer multiplo de {{multi1}} es 2</h2>
+    <h2>El segundo multiplo de {{multi1}} es 4</h2>
+    <h2>El tercer multiplo de {{multi1}} es 8</h2>
+    <h2>El promedio es {{pro}}</h2>
+</body>
+</html>
